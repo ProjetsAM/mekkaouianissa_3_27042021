@@ -17,6 +17,11 @@ header h1 {
   margin: 0 25px 0 0;
 }
 
+.recherche {
+  height: 39px;
+  width: 180px;
+}
+
 .map {
   width: 100%;
   background-color: #eaeaea;
