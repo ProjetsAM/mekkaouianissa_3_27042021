@@ -3,12 +3,18 @@ $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 
+/* Marges */
+$default-padding: 16px;
+$default-margin: 16px;
+
 
 /* Media Queries */
 $breakpoint: (
     tablette: 768px,
     desktop: 1023px,
 );
+
+
 
 
 
