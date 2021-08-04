@@ -1,0 +1,89 @@
+/* Section une restaurant a la française */
+
+.une {
+    img {
+    
+    width: 100%;
+    height: 100%;
+        }
+    .coeur {
+        position: absolute;
+        cursor: pointer;
+        top: 53px;
+        right: 8%;
+        font-size: 46px;
+    }    
+  }
+
+.une {
+    position: relative;
+
+}
+
+
+.carte_restaurant {
+    background-color: #F6F6F6;
+
+  }
+.carte_restaurant h3 {
+    font-size: 12px;
+    margin-left: 18px;
+}  
+.titre_restaurant {
+      position: relative;
+      top: -129px;
+      border-radius: 24px 24px 0 0;
+      padding: 30px 0 24px;
+      background-color: #F6F6F6;
+  }
+
+  .titre_restaurant h2 {
+      font-size: 25px;
+      margin-left: 18px;
+      font-family: "shrikhand", sans-serif;
+  }
+.barre_verte {
+      width: 80px;
+      border-top: 5px solid #99e2d0;
+      margin-left: 18px;  
+  }
+
+.intitule {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.conteneur_plat {
+    height: 128px;
+    width: 96%;
+    margin: 15px 15px 15px 18px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.plat {
+    width: 93%;
+    padding: 0px 20px;
+    font-size: 35px;
+}
+.accompagnement {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.coche_verte {
+    height: 127px;
+    width: 4%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    color: white;
+    background-color: #99e2d0;
+    border-radius: 0 15px 15px 0;
+}
+.bouton a {
+    text-decoration: none;
+}
