@@ -1,6 +1,8 @@
 /* Section _une_ restaurant a la française */
 
 .une {
+    position: relative;
+    background-color: #F6F6F6;
   img {
     width: 100%;
     height: 100%;
@@ -14,32 +16,28 @@
   }
 }
 
-.une {
-  position: relative;
-  background-color: #F6F6F6;
-}
 
 .carte_restaurant {
   background-color:#F6F6F6;
   margin-top: -19px;
-}
-.carte_restaurant h3 {
+ h3 {
   font-size: 12px;
   margin-left: 18px;
 }
+ }
+
 .titre_restaurant {
   position: relative;
   top: -129px;
   border-radius: 24px 24px 0 0;
   padding: 30px 0 24px;
   background-color: #F6F6F6;
-}
-
-.titre_restaurant h2 {
+ h2 {
   font-size: 25px;
   margin-left: 18px;
   font-family: "shrikhand", sans-serif;
 }
+ }
 .barre_verte {
   width: 80px;
   border-top: 5px solid #99e2d0;
