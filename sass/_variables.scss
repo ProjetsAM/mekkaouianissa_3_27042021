@@ -9,10 +9,8 @@ $default-margin: 16px;
 
 
 /* Media Queries */
-$breakpoint: (
-    tablette: 768px,
-    desktop: 1023px,
-);
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
 
 
 
