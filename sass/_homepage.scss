@@ -1,0 +1,100 @@
+/* Section */
+.carte_icon {
+    margin: 0 25px 0 0;
+  }
+  .recherche::placeholder{
+    color: black;
+  }
+  .recherche {
+    height: 39px;
+    width: 100%;
+    border-style: none;
+    background-color: #eaeaea;
+    font-size: 31px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .map {
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    
+  
+  }
+  h2 {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: bold;
+  }
+  .reservation {
+    text-align: center;
+    background-color: #F6F6F6;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  .reservation h2 {
+    margin: 0;
+  }
+  .reservation button {
+    border-radius: 70px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 45px;
+    background-color: pink;
+    padding: 47px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+  
+  /* section Fonctionnement */
+  
+  #section_fonctionnement {
+    font-weight: bold;
+  
+  .titre_fonctionnement {
+    padding: 55px 0 30px 37px;
+  }
+  .lesboutons_fonctionnement {
+    
+    border-radius: 50px;
+    border: 0;
+    font-size: 35px;
+    background-color: #F6F6F6;
+    padding: 56px;
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lesboutons_fonctionnement:hover {
+    background-color: #e7b2e7;
+    
+    cursor: pointer;
+  }
+  .icon_fonctionnement:hover {
+    color: #c541c5;
+    cursor: pointer;
+  }
+  .icon_fonctionnement {
+   padding-right: 30px;
+   width: 52px;
+   display: flex;
+   justify-content: center;
+   font-size: 36px;
+  }
+    }
+  
+  /* Restaurants */
+  
+  .restaurant h3 {
+    font-family: "Shrikand", sans-serif;
+    color: black;
+    text-decoration: none;
+  }

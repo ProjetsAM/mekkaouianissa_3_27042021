@@ -1,1 +1,24 @@
-#footer
+#footer {
+  background-color: #303030;
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+
+  .titre img {
+    padding: 32px 0 24px 0;
+    height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .informations {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+  }
+}
