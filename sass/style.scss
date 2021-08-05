@@ -9,20 +9,19 @@ body {
   font-family: "Roboto", sans-serif;
 
 }
-/* Header */
-header h1 {
-  text-align: center;
-  padding: 15px 0 0 0;
-  height: 70px;
-
-}
-/* Nav */
+ 
+/* Section */
 .carte_icon {
   margin: 0 25px 0 0;
 }
 .recherche {
   height: 39px;
-  width: 180px;
+  width: 100%;
+  border-style: none;
+  background-color: #eaeaea;
+  font-size: 31px;
+  text-align: center;
+  font-weight: bold;
 }
 .map {
   width: 100%;
@@ -32,6 +31,8 @@ header h1 {
   justify-content: center;
   font-size: 40px;
   font-weight: bold;
+  color: black;
+  
 
 }
 h2 {
@@ -40,22 +41,25 @@ h2 {
 }
 .reservation {
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   font-weight: bold;
-  font-size: 30px;
-  padding-top: 35px;
+  font-size: 17px;
+  padding-top: 50px;
   padding-bottom: 90px;
 }
 .reservation h2 {
   margin: 0;
 }
 .reservation button {
-  border-radius: 25px;
+  border-radius: 70px;
   border: 0;
   color: white;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 45px;
   background-color: pink;
+  padding: 47px;
+  margin-top: 35px;
+  margin-bottom: 60px;
 }
 
 /* section */
@@ -75,26 +79,8 @@ h2 {
   text-decoration: none;
 }
 
-/* Footer */
 
-.titre  {
-  color: white;
-  font-family:"Shrikhand", sans-serif ;
-  
-  
-}
 
-#footer {
-  background-color: #303030;
-  color: white;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 10px;
-}
 
-footer a {
-  text-decoration: none;
-  color: white;
 
-  
 
-}
