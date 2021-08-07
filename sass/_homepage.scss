@@ -63,13 +63,14 @@
     
     border-radius: 50px;
     border: 0;
-    font-size: 35px;
+    font-size: 40px;
     background-color: #F6F6F6;
-    padding: 56px;
+    padding: 56px 56px 56px 0;
     margin: 35px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    box-shadow: 3px 3px 10px #eaeaea;
+    
   }
   .fonctionnement__lesboutons:hover {
     background-color: #e7b2e7;
@@ -86,7 +87,7 @@
     background-color: #9356dc;
   }
   span {
-      margin: 0px;
+      margin: -13px;
       padding: 0px;
       font-family: "roboto";
       font-size: 30px;
@@ -100,7 +101,7 @@
     cursor: pointer;
   }
   .fonctionnement__icon {
-   padding-right: 30px;
+   padding: 0 30px 0 30px;
    width: 52px;
    display: flex;
    justify-content: center;
