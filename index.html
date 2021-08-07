@@ -15,17 +15,17 @@
       <h1><img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" /></h1>
     </header>
     <section>
-      <div class="map">
-        <div class="carte_icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="recherche__onglet">
+        <div class="recherche__icon"><i class="fas fa-map-marker-alt"></i></div>
         <div>
           <input
-            class="recherche"
+            class="recherche__input"
             type="text"
             placeholder="Paris, Belleville"
           />
         </div>
       </div>
-      <div class="reservation">
+      <div class="recherche__bouton">
         <h2>Réservez le menu qui <br />vous convient</h2>
         <p>
           Découvrez des restaurants d'exception, séléctionnés pas nos soins.
@@ -34,28 +34,29 @@
       </div>
     </section>
     <!-- section fonctionnement -->
-    <section id="section_fonctionnement">
-      <div class="titre_fonctionnement">
+    <section id="fonctionnement">
+      <div class="fonctionnement__titre">
         <h2>Fonctionnement</h2>
       </div>
-      <div class="lesboutons_fonctionnement">
-        <i class="fas fa-mobile-alt icon_fonctionnement"></i>
-        <div class="bouton_fonctionnement">Choisissez un restaurant</div>
+      <div class="fonctionnement__lesboutons">
+        <span class="fonctionnement__number">1</span>
+        <i class="fas fa-mobile-alt fonctionnement__icon"></i>
+        <div class="fonctionnement__bouton">Choisissez un restaurant</div>
       </div>
-      <div class="lesboutons_fonctionnement">
-        <i class="fas fa-list-ul icon_fonctionnement"></i>
-        <div class="bouton_fonctionnement">Composez votre menu</div>
+      <div class="fonctionnement__lesboutons">
+        <i class="fas fa-list-ul fonctionnement__icon"></i>
+        <div class="fonctionnement__bouton">Composez votre menu</div>
       </div>
-      <div class="lesboutons_fonctionnement">
-        <i class="fas fa-store icon_fonctionnement"></i>
-        <div class="bouton-fonctionnement">Dégustez au restaurant</div>
+      <div class="fonctionnement__lesboutons">
+        <i class="fas fa-store fonctionnement__icon"></i>
+        <div class="fonctionnement__bouton">Dégustez au restaurant</div>
       </div>
     </section>
     <!-- section -->
     <section>
       <h2>Restaurants</h2>
-      <div class="conteneur">
-        <div class="restaurant">
+      <div id="restaurants">
+        <div class="restaurant__conteneur">
           <a href="./restaurants/la-palette-du-gout.html">
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
@@ -87,17 +88,17 @@
     </section>
     <!-- Footer -->
     <footer id="footer">
-      <div class="titre">
-        <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <div class="footer__titre">
+        <h4>ohmyfood</h4>
       </div>
 
-      <div class="informations">
+      <div class="footer__informations">
         <a href="#">
-          <i class="fas fa-utensils"></i>
+          <i class="fas fa-utensils footer__icon"></i>
           <div>Proposer un restaurant</div>
         </a>
         <a href="#">
-          <i class="fas fa-hands-helping"></i>
+          <i class="fas fa-hands-helping footer__icon1"></i>
           <div>Devenir partenaire</div>
         </a>
         <a href="#">

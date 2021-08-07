@@ -1,20 +1,18 @@
-/* Section */
-.carte_icon {
-    margin: 0 25px 0 0;
-  }
-  .recherche::placeholder{
+/* Section Recherche */
+  
+  .recherche__input::placeholder{
     color: black;
   }
-  .recherche {
+  .recherche__input {
     height: 39px;
     width: 100%;
     border-style: none;
     background-color: #eaeaea;
-    font-size: 31px;
+    font-size: 37px;
     text-align: center;
     font-weight: bold;
   }
-  .map {
+  .recherche__onglet {
     width: 100%;
     background-color: #eaeaea;
     padding: 30px 0 30px 0;
@@ -22,26 +20,25 @@
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
-    color: black;
     
-  
   }
-  h2 {
-    font-family: "Shrikhand", sans-serif;
-    font-weight: bold;
-  }
-  .reservation {
+
+
+    
+  .recherche__bouton {
     text-align: center;
     background-color: #F6F6F6;
     font-weight: bold;
     font-size: 17px;
     padding-top: 50px;
     padding-bottom: 90px;
-  }
-  .reservation h2 {
+  
+   h2 {
     margin: 0;
+    font-family: "Shrikhand", sans-serif;
+    font-weight: bold;
   }
-  .reservation button {
+   button {
     border-radius: 70px;
     border: 0;
     color: white;
@@ -52,16 +49,17 @@
     margin-top: 35px;
     margin-bottom: 60px;
   }
+   }
   
-  /* section Fonctionnement */
+  /* Section Fonctionnement */
   
-  #section_fonctionnement {
+  #fonctionnement {
     font-weight: bold;
   
-  .titre_fonctionnement {
+  .fonctionnement__titre {
     padding: 55px 0 30px 37px;
   }
-  .lesboutons_fonctionnement {
+  .fonctionnement__lesboutons {
     
     border-radius: 50px;
     border: 0;
@@ -73,16 +71,35 @@
     align-items: center;
     justify-content: center;
   }
-  .lesboutons_fonctionnement:hover {
+  .fonctionnement__lesboutons:hover {
     background-color: #e7b2e7;
-    
     cursor: pointer;
   }
-  .icon_fonctionnement:hover {
+  .fonctionnement__number {
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #9356dc;
+  }
+  span {
+      margin: 0px;
+      padding: 0px;
+      font-family: "roboto";
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+
+  }
+
+  .fonctionnement__icon:hover {
     color: #c541c5;
     cursor: pointer;
   }
-  .icon_fonctionnement {
+  .fonctionnement__icon {
    padding-right: 30px;
    width: 52px;
    display: flex;
@@ -92,9 +109,17 @@
     }
   
   /* Restaurants */
-  
-  .restaurant h3 {
+  #restaurants__conteneur {
+      
+
+   h3 {
     font-family: "Shrikand", sans-serif;
     color: black;
     text-decoration: none;
   }
+
+   a {
+     color: black;
+     font-family: "roboto", sans-serif;  
+   }
+    }
