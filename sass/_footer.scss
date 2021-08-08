@@ -1,24 +1,39 @@
 #footer {
   background-color: #303030;
   color: white;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
+  font-family: "roboto", sans-serif;
   text-decoration: none;
+  padding: 20px 0 20px 15px;
 
-  .titre img {
-    padding: 32px 0 24px 0;
-    height: 20px;
+  h4 {
+    
+    font-size: 40px;
+    font-family: shrikhand;
+    color: white;
   }
 
   a {
     text-decoration: none;
     color: white;
     cursor: pointer;
-  }
-  .informations {
     display: flex;
-    align-items: center;
+    padding-right: 10px;
+  }
+  .footer__informations {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     padding: 15px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .footer__informations a {
+    padding-bottom: 15px;
+  }
+  .footer__icon  {
+    padding-right: 29px;
+  }
+  .footer__icon1 {
+    padding-right: 15px;
   }
 }
