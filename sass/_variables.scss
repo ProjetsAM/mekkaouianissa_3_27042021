@@ -1,9 +1,10 @@
 /* Couleurs */
-$couleur-primaire: #9356DC;
-$couleur-secondaire: #FF79DA;
-$couleur-tertiaire: #99E2D0;
-$couleur-gris: #F6F6F6;
-$couleur-gris2: #eaeaea;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: #F6F6F6;
+$color-grey2: #eaeaea;
+
 
 /* Marges */
 $default-padding: 16px;
@@ -11,7 +12,9 @@ $default-margin: 16px;
 
 
 /* Media Queries */
+$breakpoint-smartphone-max: 767px;
 $breakpoint-tablet: 768px;
+$breakpoint-tablet-max: 1023px;
 $breakpoint-desktop: 1024px;
 
 

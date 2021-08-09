@@ -1,8 +1,8 @@
-/* Section _une_ restaurant a la française */
+/* Sections Restaurants  */
 
 .une {
     position: relative;
-    background-color: #F6F6F6;
+    background-color: $color-grey;
   img {
     width: 100%;
     height: 100%;
@@ -14,30 +14,30 @@
     right: 8%;
     font-size: 46px;
   }
-}
-
 
 .carte_restaurant {
-  background-color:#F6F6F6;
+  background-color: $color-grey;
   margin-top: -19px;
+   }
  h3 {
   font-size: 12px;
   margin-left: 18px;
 }
- }
-
+ 
 .titre_restaurant {
   position: relative;
   top: -129px;
   border-radius: 24px 24px 0 0;
   padding: 30px 0 24px;
-  background-color: #F6F6F6;
+  background-color: $color-grey;
+   }
  h2 {
   font-size: 25px;
   margin-left: 18px;
   font-family: "shrikhand", sans-serif;
 }
  }
+
 .barre_verte {
   width: 80px;
   border-top: 5px solid #99e2d0;
@@ -58,7 +58,7 @@
   border-radius: 15px;
 }
 .plat {
-  width: 93%;
+  width: 100%;
   padding: 0px 20px;
   font-size: 35px;
 }
@@ -68,17 +68,33 @@
 }
 .coche_verte {
   height: 127px;
-  width: 4%;
-  padding: 0 5%;
+  width: 100px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 20px;
   color: white;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
 }
-.bouton a {
-  text-decoration: none;
+
+
+
+  .bouton { 
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  background-color: pink;
+  padding: 47px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  
 }
