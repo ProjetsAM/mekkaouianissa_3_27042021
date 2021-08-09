@@ -10,9 +10,9 @@
   .coeur {
     position: absolute;
     cursor: pointer;
-    top: 53px;
+    top: 26px;
     right: 8%;
-    font-size: 46px;
+    font-size: 23px;
   }
 
 .carte_restaurant {
@@ -27,31 +27,31 @@
 .titre_restaurant {
   position: relative;
   top: -129px;
-  border-radius: 24px 24px 0 0;
-  padding: 30px 0 24px;
+  border-radius: 12px 12px 0 0;
+  padding: 15px 0 12px;
   background-color: $color-grey;
    }
  h2 {
-  font-size: 25px;
-  margin-left: 18px;
+  font-size: 19px;
+  margin-left: 9px;
   font-family: "shrikhand", sans-serif;
 }
  }
 
 .barre_verte {
-  width: 80px;
-  border-top: 5px solid #99e2d0;
-  margin-left: 18px;
+  width: 40px;
+  border-top: 3px solid #99e2d0;
+  margin-left: 9px;
 }
 
 .intitule {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .conteneur_plat {
-  height: 128px;
+  height: 60px;
   width: 96%;
-  margin: 15px 15px 15px 18px;
+  margin: 7px 7px 7px 9px;
   display: flex;
   align-items: center;
   background-color: white;
@@ -59,15 +59,15 @@
 }
 .plat {
   width: 100%;
-  padding: 0px 20px;
-  font-size: 35px;
+  padding: 0px 10px;
+  font-size: 20px;
 }
 .accompagnement {
   display: flex;
   justify-content: space-between;
 }
 .coche_verte {
-  height: 127px;
+  height: 60px;
   width: 100px;
   padding: 0 10px;
   display: flex;
@@ -81,20 +81,23 @@
 
 
   .bouton { 
-  border-radius: 100px;
+  
+  margin-left: 70px;
+    
+  button { 
+  border-radius: 35px;
   border: 0;
   color: white;
   cursor: pointer;
   background-color: pink;
-  padding: 47px;
-  margin-top: 35px;
-  margin-bottom: 60px;
+  padding: 18px;
+  margin-top: 17px;
+  margin-bottom: 30px;
   text-align: center;
-
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  width: 205px;
   }
   
 }

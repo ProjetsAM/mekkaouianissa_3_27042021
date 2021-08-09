@@ -4,21 +4,21 @@
     color: black;
   }
   .recherche__input {
-    height: 39px;
+    height: 17px;
     width: 100%;
     border-style: none;
     background-color: $color-grey2;
-    font-size: 37px;
+    font-size: 17px;
     text-align: center;
     font-weight: bold;
   }
   .recherche__onglet {
     width: 100%;
     background-color: $color-grey2;
-    padding: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     
   }
@@ -30,8 +30,8 @@
     background-color: $color-grey;
     font-weight: bold;
     font-size: 17px;
-    padding-top: 50px;
-    padding-bottom: 90px;
+    padding-top: 25px;
+    padding-bottom: 45px;
   
    h2 {
     margin: 0;
@@ -39,15 +39,15 @@
     font-weight: bold;
   }
    button {
-    border-radius: 70px;
+    border-radius: 32px;
     border: 0;
     color: white;
     cursor: pointer;
-    font-size: 45px;
+    font-size: 20px;
     background-color: pink;
-    padding: 47px;
-    margin-top: 35px;
-    margin-bottom: 60px;
+    padding: 23px;
+    margin-top: 17px;
+    margin-bottom: 30px;
   }
    }
   
@@ -55,23 +55,23 @@
   
   #fonctionnement {
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   
   .fonctionnement__titre {
-    padding: 55px 0 30px 37px;
+    padding: 22px 0 15px 18px;
     font-family: "Shrikand", sans-serif;
   }
   .fonctionnement__lesboutons {
     
     border-radius: 50px;
     border: 0;
-    font-size: 40px;
+    font-size: 16px;
     background-color: $color-grey;
-    padding: 56px 56px 56px 0;
-    margin: 55px;
+    padding: 28px 28px 28px 0;
+    margin: 26px;
     display: flex;
     align-items: center;
-    box-shadow: 3px 3px 15px $color-grey2;
+    box-shadow: 3px 3px 10px $color-grey2;
     
   }
   .fonctionnement__lesboutons:hover {
@@ -80,8 +80,8 @@
   }
   .fonctionnement__number {
 
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +92,7 @@
       margin: -13px;
       padding: 0px;
       font-family: "roboto";
-      font-size: 30px;
+      font-size: 12px;
       font-weight: bold;
       color: white;
 
@@ -103,11 +103,11 @@
     cursor: pointer;
   }
   .fonctionnement__icon {
-   padding: 0 45px 0 45px;
+   padding: 0 22px 0 22px;
    width: 52px;
    display: flex;
    justify-content: center;
-   font-size: 36px;
+   font-size: 20px;
   }
     }
   
@@ -117,7 +117,7 @@
 
    h2 {
        font-family: "Shrikand", sans-serif;
-       padding: 70px 0 15px 0;
+       padding: 35px 0 15px 0;
    }
 
    h3 {
