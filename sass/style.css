@@ -1,28 +1,107 @@
 @import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+/* Couleurs */
+/* Marges */
+/* Media Queries */
+#footer {
+  background-color: #303030;
+  color: white;
+  font-family: "roboto", sans-serif;
+  text-decoration: none;
+  padding: 20px 0 20px 15px;
 }
 
-/* Header */
+#footer h4 {
+  font-size: 40px;
+  font-family: shrikhand;
+  color: white;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+}
+
+#footer .footer__informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#footer .footer__informations a {
+  padding-bottom: 20px;
+}
+
+#footer .footer__icon {
+  padding-right: 29px;
+}
+
+#footer .footer__icon1 {
+  padding-right: 15px;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+}
+
+header .retour {
+  position: absolute;
+  left: 58px;
+  font-size: 52px;
+  bottom: 4px;
+  color: black;
+}
+
 header h1 {
   text-align: center;
+}
+
+header img {
   padding: 15px 0 0 0;
   height: 70px;
 }
 
-/* Nav */
-.carte_icon {
-  margin: 0 25px 0 0;
+/* Header */
+.recherche__input::-webkit-input-placeholder {
+  color: black;
+}
+.recherche__input:-ms-input-placeholder {
+  color: black;
+}
+.recherche__input::-ms-input-placeholder {
+  color: black;
+}
+.recherche__input::placeholder {
+  color: black;
 }
 
-.recherche {
+.recherche__input {
   height: 39px;
-  width: 180px;
+  width: 100%;
+  border-style: none;
+  background-color: #eaeaea;
+  font-size: 37px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.map {
+.recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
   padding: 30px 0 30px 0;
@@ -36,64 +115,250 @@ header h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: bold;
-}
-
-.reservation {
+.recherche__bouton {
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   font-weight: bold;
-  font-size: 30px;
-  padding-top: 35px;
+  font-size: 17px;
+  padding-top: 50px;
   padding-bottom: 90px;
 }
 
-.reservation h2 {
+.recherche__bouton h2 {
   margin: 0;
-}
-
-.reservation button {
-  border-radius: 25px;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-  background-color: pink;
-}
-
-/* section */
-#fonctionnement {
+  font-family: "Shrikhand", sans-serif;
   font-weight: bold;
 }
 
-.titre_fonctionnement {
-  padding: 55px 0 30px 0;
+.recherche__bouton button {
+  border-radius: 70px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 45px;
+  background-color: pink;
+  padding: 47px;
+  margin-top: 35px;
+  margin-bottom: 60px;
 }
 
-/* Restaurants */
-.restaurant h3 {
+/* Section Fonctionnement */
+#fonctionnement {
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+#fonctionnement .fonctionnement__titre {
+  padding: 55px 0 30px 37px;
+  font-family: "Shrikand", sans-serif;
+}
+
+#fonctionnement .fonctionnement__lesboutons {
+  border-radius: 50px;
+  border: 0;
+  font-size: 40px;
+  background-color: #F6F6F6;
+  padding: 56px 56px 56px 0;
+  margin: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 3px 15px #eaeaea;
+          box-shadow: 3px 3px 15px #eaeaea;
+}
+
+#fonctionnement .fonctionnement__lesboutons:hover {
+  background-color: #e7b2e7;
+  cursor: pointer;
+}
+
+#fonctionnement .fonctionnement__number {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  background-color: #9356dc;
+}
+
+#fonctionnement span {
+  margin: -13px;
+  padding: 0px;
+  font-family: "roboto";
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#fonctionnement .fonctionnement__icon:hover {
+  color: #c541c5;
+  cursor: pointer;
+}
+
+#fonctionnement .fonctionnement__icon {
+  padding: 0 45px 0 45px;
+  width: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+}
+
+/* Section Restaurants */
+#restaurants {
+  background-color: #F6F6F6;
+}
+
+#restaurants h2 {
+  font-family: "Shrikand", sans-serif;
+  padding: 70px 0 15px 0;
+}
+
+#restaurants h3 {
   font-family: "Shrikand", sans-serif;
   color: black;
+}
+
+#restaurants a {
+  color: black;
+  font-family: "roboto", sans-serif;
   text-decoration: none;
 }
 
-/* Footer */
-.titre {
-  color: white;
-  font-family: "Shrikhand", sans-serif;
+/* Sections Restaurants  */
+.une {
+  position: relative;
+  background-color: #F6F6F6;
 }
 
-#footer {
-  background-color: #303030;
-  color: white;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 10px;
+.une img {
+  width: 100%;
+  height: 100%;
 }
 
-footer a {
+.une .coeur {
+  position: absolute;
+  cursor: pointer;
+  top: 53px;
+  right: 8%;
+  font-size: 46px;
+}
+
+.une .carte_restaurant {
+  background-color: #F6F6F6;
+  margin-top: -19px;
+}
+
+.une h3 {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+.une .titre_restaurant {
+  position: relative;
+  top: -129px;
+  border-radius: 24px 24px 0 0;
+  padding: 30px 0 24px;
+  background-color: #F6F6F6;
+}
+
+.une h2 {
+  font-size: 25px;
+  margin-left: 18px;
+  font-family: "shrikhand", sans-serif;
+}
+
+.barre_verte {
+  width: 80px;
+  border-top: 5px solid #99e2d0;
+  margin-left: 18px;
+}
+
+.intitule {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.conteneur_plat {
+  height: 128px;
+  width: 96%;
+  margin: 15px 15px 15px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.plat {
+  width: 100%;
+  padding: 0px 20px;
+  font-size: 35px;
+}
+
+.accompagnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coche_verte {
+  height: 127px;
+  width: 100px;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+}
+
+.bouton {
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  background-color: pink;
+  padding: 47px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.bouton a {
   text-decoration: none;
+  font-weight: bold;
   color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
