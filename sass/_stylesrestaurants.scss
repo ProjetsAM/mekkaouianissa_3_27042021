@@ -41,7 +41,7 @@
 .barre_verte {
   width: 40px;
   border-top: 3px solid #99e2d0;
-  margin-left: 9px;
+  margin-left: 16px;
 }
 
 .intitule {
@@ -49,7 +49,7 @@
   margin-bottom: 5px;
 }
 .conteneur_plat {
-  height: 60px;
+  height: 50px;
   width: 96%;
   margin: 7px 7px 7px 9px;
   display: flex;
@@ -60,15 +60,19 @@
 .plat {
   width: 100%;
   padding: 0px 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .accompagnement {
   display: flex;
   justify-content: space-between;
 }
+
+.prix {
+  font-weight: bold;
+}
 .coche_verte {
-  height: 60px;
-  width: 100px;
+  height: 50px;
+  width: 34px;
   padding: 0 10px;
   display: flex;
   align-items: center;

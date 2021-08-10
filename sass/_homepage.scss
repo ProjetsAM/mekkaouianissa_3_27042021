@@ -1,17 +1,6 @@
 /* Header */
   
-  .recherche__input::placeholder{
-    color: black;
-  }
-  .recherche__input {
-    height: 17px;
-    width: 100%;
-    border-style: none;
-    background-color: $color-grey2;
-    font-size: 17px;
-    text-align: center;
-    font-weight: bold;
-  }
+  
   .recherche__onglet {
     width: 100%;
     background-color: $color-grey2;
@@ -23,8 +12,23 @@
     
   }
 
-
+  .recherche__icon {
+      margin-left: 60px;
+  }
     
+  .recherche__input::placeholder{
+    color: black;
+  }
+  .recherche__input {
+    height: 17px;
+    width: 65%;
+    border-style: none;
+    background-color: $color-grey2;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+  }
+
   .recherche__bouton {
     text-align: center;
     background-color: $color-grey;
