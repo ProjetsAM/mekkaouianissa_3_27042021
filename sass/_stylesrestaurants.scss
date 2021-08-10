@@ -1,6 +1,6 @@
 /* Sections Restaurants  */
 
-.une {
+.restaurant__section {
     position: relative;
     background-color: $color-grey;
   img {
@@ -15,7 +15,7 @@
     font-size: 23px;
   }
 
-.carte_restaurant {
+.restaurant__carte {
   background-color: $color-grey;
   margin-top: -19px;
    }
@@ -24,10 +24,10 @@
   margin-left: 18px;
 }
  
-.titre_restaurant {
+.restaurant__titre {
   position: relative;
-  top: -129px;
-  border-radius: 12px 12px 0 0;
+  top: -41px;
+  border-radius: 35px 35px 0 0;
   padding: 15px 0 12px;
   background-color: $color-grey;
    }
@@ -38,7 +38,7 @@
 }
  }
 
-.barre_verte {
+.restaurant__barre_verte {
   width: 40px;
   border-top: 3px solid #99e2d0;
   margin-left: 16px;
@@ -48,8 +48,8 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
-.conteneur_plat {
-  height: 50px;
+.restaurant__conteneur_plat {
+  height: 55px;
   width: 96%;
   margin: 7px 7px 7px 9px;
   display: flex;
@@ -61,6 +61,7 @@
   width: 100%;
   padding: 0px 10px;
   font-size: 15px;
+
 }
 .accompagnement {
   display: flex;
@@ -70,8 +71,8 @@
 .prix {
   font-weight: bold;
 }
-.coche_verte {
-  height: 50px;
+.restaurant__coche_verte {
+  height: 55px;
   width: 34px;
   padding: 0 10px;
   display: flex;
@@ -102,6 +103,14 @@
   font-weight: bold;
   color: white;
   width: 205px;
+  }
+
+  .plats {
+    background-color: $color-grey;
+  }
+
+  .desserts {
+    background-color: $color-grey;
   }
   
 }
