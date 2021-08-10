@@ -10,8 +10,8 @@
   .coeur {
     position: absolute;
     cursor: pointer;
-    top: 26px;
-    right: 8%;
+    top: 38px;
+    right: 31px;
     font-size: 23px;
   }
 
@@ -26,13 +26,13 @@
  
 .restaurant__titre {
   position: relative;
-  top: -41px;
+  top: -36px;
   border-radius: 35px 35px 0 0;
   padding: 15px 0 12px;
   background-color: $color-grey;
    }
  h2 {
-  font-size: 19px;
+  font-size: 24px;
   margin-left: 9px;
   font-family: "shrikhand", sans-serif;
 }
@@ -40,35 +40,35 @@
 
 .restaurant__barre_verte {
   width: 40px;
-  border-top: 3px solid #99e2d0;
+  border-top: 3px solid $color-tertiary;
   margin-left: 16px;
 }
 
-.intitule {
+.restaurant__intitule {
   font-weight: bold;
   margin-bottom: 5px;
 }
 .restaurant__conteneur_plat {
   height: 55px;
   width: 96%;
-  margin: 7px 7px 7px 9px;
+  margin: 13px 7px 15px 9px;
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 15px;
 }
-.plat {
+.restaurant__plat {
   width: 100%;
   padding: 0px 10px;
   font-size: 15px;
 
 }
-.accompagnement {
+.restaurant__accompagnement {
   display: flex;
   justify-content: space-between;
 }
 
-.prix {
+.restaurant__prix {
   font-weight: bold;
 }
 .restaurant__coche_verte {
@@ -79,13 +79,26 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #99e2d0;
+  background-color: $color-tertiary;
   border-radius: 0 15px 15px 0;
 }
 
+.restaurant__plats {
+  background-color: $color-grey;
 
+h3 {
+  font-size: 12px;
+ } 
+}
 
-  .bouton { 
+.restaurant__desserts {
+  background-color: $color-grey;
+
+h3 {
+  font-size: 12px;
+ }  
+}
+  .restaurant__bouton { 
   
   margin-left: 70px;
     
@@ -103,14 +116,5 @@
   font-weight: bold;
   color: white;
   width: 205px;
-  }
-
-  .plats {
-    background-color: $color-grey;
-  }
-
-  .desserts {
-    background-color: $color-grey;
-  }
-  
+  } 
 }

@@ -15,6 +15,8 @@
   font-size: 20px;
   font-family: shrikhand;
   color: white;
+  font-weight: 500;
+  padding: 15px 0 0 0;
 }
 
 #footer a {
@@ -36,7 +38,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -77,29 +79,6 @@ header img {
 }
 
 /* Header */
-.recherche__input::-webkit-input-placeholder {
-  color: black;
-}
-.recherche__input:-ms-input-placeholder {
-  color: black;
-}
-.recherche__input::-ms-input-placeholder {
-  color: black;
-}
-.recherche__input::placeholder {
-  color: black;
-}
-
-.recherche__input {
-  height: 17px;
-  width: 100%;
-  border-style: none;
-  background-color: #eaeaea;
-  font-size: 17px;
-  text-align: center;
-  font-weight: bold;
-}
-
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -114,6 +93,36 @@ header img {
   font-weight: bold;
 }
 
+.recherche__icon {
+  margin-left: 70px;
+}
+
+.recherche__input::-webkit-input-placeholder {
+  color: black;
+}
+
+.recherche__input:-ms-input-placeholder {
+  color: black;
+}
+
+.recherche__input::-ms-input-placeholder {
+  color: black;
+}
+
+.recherche__input::placeholder {
+  color: black;
+}
+
+.recherche__input {
+  height: 17px;
+  width: 65%;
+  border-style: none;
+  background-color: #eaeaea;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .recherche__bouton {
   text-align: center;
   background-color: #F6F6F6;
@@ -125,7 +134,7 @@ header img {
 
 .recherche__bouton h2 {
   margin: 0;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -150,6 +159,7 @@ header img {
 #fonctionnement .fonctionnement__titre {
   padding: 22px 0 15px 18px;
   font-family: "Shrikand", sans-serif;
+  font-weight: 500;
 }
 
 #fonctionnement .fonctionnement__lesboutons {
@@ -238,63 +248,63 @@ header img {
 }
 
 /* Sections Restaurants  */
-.une {
+.restaurant__section {
   position: relative;
   background-color: #F6F6F6;
 }
 
-.une img {
+.restaurant__section img {
   width: 100%;
   height: 100%;
 }
 
-.une .coeur {
+.restaurant__section .coeur {
   position: absolute;
   cursor: pointer;
-  top: 26px;
-  right: 8%;
+  top: 38px;
+  right: 31px;
   font-size: 23px;
 }
 
-.une .carte_restaurant {
+.restaurant__section .restaurant__carte {
   background-color: #F6F6F6;
   margin-top: -19px;
 }
 
-.une h3 {
+.restaurant__section h3 {
   font-size: 12px;
   margin-left: 18px;
 }
 
-.une .titre_restaurant {
+.restaurant__section .restaurant__titre {
   position: relative;
-  top: -129px;
-  border-radius: 12px 12px 0 0;
+  top: -36px;
+  border-radius: 35px 35px 0 0;
   padding: 15px 0 12px;
   background-color: #F6F6F6;
 }
 
-.une h2 {
-  font-size: 19px;
+.restaurant__section h2 {
+  font-size: 24px;
   margin-left: 9px;
   font-family: "shrikhand", sans-serif;
 }
 
-.barre_verte {
+.restaurant__barre_verte {
   width: 40px;
-  border-top: 3px solid #99e2d0;
-  margin-left: 9px;
+  border-top: 3px solid #99E2D0;
+  margin-left: 16px;
 }
 
-.intitule {
+.restaurant__intitule {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.conteneur_plat {
-  height: 60px;
+.restaurant__conteneur_plat {
+  height: 55px;
   width: 96%;
-  margin: 7px 7px 7px 9px;
+  margin: 13px 7px 15px 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,13 +315,13 @@ header img {
   border-radius: 15px;
 }
 
-.plat {
+.restaurant__plat {
   width: 100%;
   padding: 0px 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.accompagnement {
+.restaurant__accompagnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,9 +330,13 @@ header img {
           justify-content: space-between;
 }
 
-.coche_verte {
-  height: 60px;
-  width: 100px;
+.restaurant__prix {
+  font-weight: bold;
+}
+
+.restaurant__coche_verte {
+  height: 55px;
+  width: 34px;
   padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,15 +348,31 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
 }
 
-.bouton {
+.restaurant__plats {
+  background-color: #F6F6F6;
+}
+
+.restaurant__plats h3 {
+  font-size: 12px;
+}
+
+.restaurant__desserts {
+  background-color: #F6F6F6;
+}
+
+.restaurant__desserts h3 {
+  font-size: 12px;
+}
+
+.restaurant__bouton {
   margin-left: 70px;
 }
 
-.bouton button {
+.restaurant__bouton button {
   border-radius: 35px;
   border: 0;
   color: white;
