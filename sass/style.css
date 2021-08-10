@@ -123,6 +123,7 @@ header img {
   font-weight: bold;
 }
 
+s
 .recherche__bouton {
   text-align: center;
   background-color: #F6F6F6;
@@ -132,12 +133,14 @@ header img {
   padding-bottom: 45px;
 }
 
+s
 .recherche__bouton h2 {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
+s
 .recherche__bouton button {
   border-radius: 32px;
   border: 0;
