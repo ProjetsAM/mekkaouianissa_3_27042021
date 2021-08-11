@@ -1,5 +1,4 @@
-/* Header */
-  
+
   
   .recherche__onglet {
     width: 100%;
@@ -9,16 +8,16 @@
     justify-content: center;
     font-size: 20px;
     font-weight: bold;
-    
   }
-
+  
   .recherche__icon {
-      margin-left: 70px;
+    margin-left: 70px;
   }
-    
-  .recherche__input::placeholder{
+  
+  .recherche__input::placeholder {
     color: black;
   }
+  
   .recherche__input {
     height: 17px;
     width: 65%;
@@ -28,112 +27,106 @@
     text-align: center;
     font-weight: bold;
   }
-s
-  .recherche__bouton {
+  
+    .recherche__bouton {
     text-align: center;
     background-color: $color-grey;
     font-weight: bold;
     font-size: 17px;
     padding-top: 25px;
     padding-bottom: 45px;
+  }
+
+    h2 {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+    button {
+      border-radius: 32px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      background: linear-gradient( #ff79da 10% , #9356dc 90%);
+      padding: 23px;
+      margin-top: 17px;
+      margin-bottom: 30px;
+    }
   
-   h2 {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-  }
-   button {
-    border-radius: 32px;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: pink;
-    padding: 23px;
-    margin-top: 17px;
-    margin-bottom: 30px;
-  }
-   }
+  
   
   /* Section Fonctionnement */
   
   #fonctionnement {
     font-weight: bold;
     padding-bottom: 20px;
-  
-  .fonctionnement__titre {
-    padding: 22px 0 15px 18px;
-    font-family: "Shrikand", sans-serif;
-    font-weight: 500;
-  }
-  .fonctionnement__lesboutons {
-    
-    border-radius: 50px;
-    border: 0;
-    font-size: 16px;
-    background-color: $color-grey;
-    padding: 28px 28px 28px 0;
-    margin: 26px;
-    display: flex;
-    align-items: center;
-    box-shadow: 3px 3px 10px $color-grey2;
-    
-  }
-  .fonctionnement__lesboutons:hover {
-    background-color: #e7b2e7;
-    cursor: pointer;
-  }
-  .fonctionnement__number {
-
-    height: 25px;
-    width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    background-color: #9356dc;
-  }
-  span {
+    .fonctionnement__titre {
+      padding: 22px 0 15px 18px;
+      font-family: "Shrikand", sans-serif;
+      font-weight: 500;
+    }
+    .fonctionnement__boutons {
+      border-radius: 50px;
+      border: 0;
+      font-size: 16px;
+      background-color: $color-grey;
+      padding: 28px 28px 28px 0;
+      margin: 26px;
+      display: flex;
+      align-items: center;
+      box-shadow: 3px 3px 10px $color-grey2;
+    }
+    .fonctionnement__boutons:hover {
+      background-color: #e7b2e7;
+      cursor: pointer;
+    }
+    .fonctionnement__number {
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      background-color: #9356dc;
+    }
+    span {
       margin: -13px;
       padding: 0px;
       font-family: "roboto";
       font-size: 12px;
       font-weight: bold;
       color: white;
-
-  }
-
-  .fonctionnement__icon:hover {
-    color: #c541c5;
-    cursor: pointer;
-  }
-  .fonctionnement__icon {
-   padding: 0 22px 0 22px;
-   width: 52px;
-   display: flex;
-   justify-content: center;
-   font-size: 20px;
-  }
     }
+    .fonctionnement__icon:hover {
+      color: #c541c5;
+      cursor: pointer;
+    }
+    .fonctionnement__icon {
+      padding: 0 22px 0 22px;
+      width: 52px;
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+    }
+  }
+  
   
   /* Section Restaurants */
+  
   #restaurants {
-    background-color: $color-grey;   
-
-   h2 {
-       font-family: "Shrikand", sans-serif;
-       padding: 35px 0 15px 0;
-   }
-
-   h3 {
-    font-family: "Shrikand", sans-serif;
-    color: black;
-    
-  }
-
-   a {
-     color: black;
-     font-family: "roboto", sans-serif;  
-     text-decoration: none;
-   }
+    background-color: $color-grey;
+    h2 {
+      font-family: "Shrikand", sans-serif;
+      padding: 35px 0 15px 0;
     }
+    h3 {
+      font-family: "Shrikand", sans-serif;
+      color: black;
+    }
+    a {
+      color: black;
+      font-family: "roboto", sans-serif;
+      text-decoration: none;
+    }
+  }

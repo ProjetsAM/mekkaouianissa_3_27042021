@@ -50,7 +50,7 @@
   padding-right: 15px;
 }
 
-#footer .footer__icon1 {
+#footer .footer__icon_partenaire {
   padding-right: 10px;
 }
 
@@ -78,7 +78,6 @@ header img {
   height: 35px;
 }
 
-/* Header */
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -123,7 +122,6 @@ header img {
   font-weight: bold;
 }
 
-s
 .recherche__bouton {
   text-align: center;
   background-color: #F6F6F6;
@@ -133,21 +131,20 @@ s
   padding-bottom: 45px;
 }
 
-s
-.recherche__bouton h2 {
+h2 {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
-s
-.recherche__bouton button {
+button {
   border-radius: 32px;
   border: 0;
   color: white;
   cursor: pointer;
   font-size: 20px;
-  background-color: pink;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
+  background: linear-gradient(#ff79da 10%, #9356dc 90%);
   padding: 23px;
   margin-top: 17px;
   margin-bottom: 30px;
@@ -165,7 +162,7 @@ s
   font-weight: 500;
 }
 
-#fonctionnement .fonctionnement__lesboutons {
+#fonctionnement .fonctionnement__boutons {
   border-radius: 50px;
   border: 0;
   font-size: 16px;
@@ -182,7 +179,7 @@ s
           box-shadow: 3px 3px 10px #eaeaea;
 }
 
-#fonctionnement .fonctionnement__lesboutons:hover {
+#fonctionnement .fonctionnement__boutons:hover {
   background-color: #e7b2e7;
   cursor: pointer;
 }
