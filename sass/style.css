@@ -377,22 +377,15 @@ h3 {
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  -webkit-transform: translateX(70px);
-          transform: translateX(70px);
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
 }
 
-.restaurant__coche_verte:hover {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-span i {
-  -webkit-transform: rotate 360deg;
-          transform: rotate 360deg;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
+.restaurant__coche_verte i:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .restaurant__bouton {
