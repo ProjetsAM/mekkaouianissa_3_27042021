@@ -16,7 +16,6 @@
   font-family: shrikhand;
   color: white;
   font-weight: 500;
-  padding: 15px 0 0 0;
 }
 
 #footer a {
@@ -27,6 +26,10 @@
   display: -ms-flexbox;
   display: flex;
   padding-right: 10px;
+}
+
+#footer a:hover {
+  color: #AF7AC5;
 }
 
 #footer .footer__informations {
@@ -125,9 +128,8 @@ header img {
 .recherche__bouton {
   text-align: center;
   background-color: #F6F6F6;
-  font-weight: bold;
   font-size: 17px;
-  padding-top: 25px;
+  padding-top: 36px;
   padding-bottom: 45px;
 }
 
@@ -135,6 +137,7 @@ h2 {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 21px;
 }
 
 button {
@@ -142,18 +145,34 @@ button {
   border: 0;
   color: white;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
   background: linear-gradient(#ff79da 10%, #9356dc 90%);
-  padding: 23px;
+  padding: 19px;
   margin-top: 17px;
   margin-bottom: 30px;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+button:hover {
+  background: linear-gradient #ff79da 20%, #9356dc 60%;
+  -webkit-box-shadow: 6px 5px 10px #acabab;
+          box-shadow: 6px 5px 10px #acabab;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /* Section Fonctionnement */
 #fonctionnement {
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 #fonctionnement .fonctionnement__titre {
@@ -163,7 +182,7 @@ button {
 }
 
 #fonctionnement .fonctionnement__boutons {
-  border-radius: 50px;
+  border-radius: 23px;
   border: 0;
   font-size: 16px;
   background-color: #F6F6F6;
@@ -180,7 +199,7 @@ button {
 }
 
 #fonctionnement .fonctionnement__boutons:hover {
-  background-color: #e7b2e7;
+  background-color: #E8DAEF;
   cursor: pointer;
 }
 
@@ -210,7 +229,7 @@ button {
 }
 
 #fonctionnement .fonctionnement__icon:hover {
-  color: #c541c5;
+  color: #9356dc;
   cursor: pointer;
 }
 
@@ -272,8 +291,9 @@ button {
 }
 
 .restaurant__section h3 {
-  font-size: 12px;
-  margin-left: 18px;
+  font-size: 17px;
+  margin-left: 15px;
+  margin-bottom: 2px;
 }
 
 .restaurant__section .restaurant__titre {
@@ -286,14 +306,21 @@ button {
 
 .restaurant__section h2 {
   font-size: 24px;
-  margin-left: 9px;
+  margin: 15px 15px 0 15px;
   font-family: "shrikhand", sans-serif;
+}
+
+h3 {
+  position: relative;
 }
 
 .restaurant__barre_verte {
   width: 40px;
-  border-top: 3px solid #99E2D0;
-  margin-left: 16px;
+  background-color: #99E2D0;
+  margin: 0 15px 0 15px;
+  position: absolute;
+  height: 3px;
+  left: -1px;
 }
 
 .restaurant__intitule {
@@ -350,22 +377,22 @@ button {
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
-.restaurant__plats {
-  background-color: #F6F6F6;
+.restaurant__coche_verte:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
-.restaurant__plats h3 {
-  font-size: 12px;
-}
-
-.restaurant__desserts {
-  background-color: #F6F6F6;
-}
-
-.restaurant__desserts h3 {
-  font-size: 12px;
+span i {
+  -webkit-transform: rotate 360deg;
+          transform: rotate 360deg;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .restaurant__bouton {
@@ -373,11 +400,12 @@ button {
 }
 
 .restaurant__bouton button {
-  border-radius: 35px;
+  border-radius: 32px;
   border: 0;
   color: white;
   cursor: pointer;
-  background-color: pink;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
+  background: linear-gradient(#ff79da 10%, #9356dc 90%);
   padding: 18px;
   margin-top: 17px;
   margin-bottom: 30px;
