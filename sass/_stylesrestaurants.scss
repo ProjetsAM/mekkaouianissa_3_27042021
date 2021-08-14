@@ -20,8 +20,8 @@
 	}
 	h3 {
 		font-size: 17px;
-		margin-left: 15px;
-		margin-bottom: 2px;
+		margin: 25px 0 2px 15px;
+		
 	}
 	.restaurant__titre {
 		position: relative;
@@ -41,14 +41,17 @@ h3 {
 	position: relative;
 }
 
-.restaurant__barre_verte {
+h3::after {
+	content: '';
 	width: 40px;
+	height: 3px;
 	background-color: $color-tertiary;
 	margin: 0 15px 0 15px;
 	position: absolute;
-	height: 3px;
-	left: -1px;
+	left: -16px;
+	bottom: -8px;
 }
+
 
 .restaurant__intitule {
 	font-weight: bold;
@@ -58,7 +61,7 @@ h3 {
 .restaurant__conteneur_plat {
 	height: 55px;
 	width: 96%;
-	margin: 13px 7px 15px 9px;
+	margin: 18px 7px 15px 9px;
 	display: flex;
 	align-items: center;
 	background-color: white;
@@ -90,7 +93,7 @@ h3 {
 	color: white;
 	background-color: $color-tertiary;
 	border-radius: 0 15px 15px 0;
-	transition-duration: 400ms;
+	
 }
 
 .restaurant__coche_verte i:hover {
@@ -101,20 +104,22 @@ h3 {
    
 
 .restaurant__bouton {
-	margin-left: 70px;
+	display: flex;
+	justify-content: center;
+	padding: 45px 0;
 	button {
 		border-radius: 32px;
 		border: 0;
 		color: white;
 		cursor: pointer;
 		background: linear-gradient( #ff79da 10%, #9356dc 90%);
-		padding: 18px;
+		padding: 16px;
 		margin-top: 17px;
 		margin-bottom: 30px;
 		text-align: center;
 		text-decoration: none;
 		font-weight: bold;
 		color: white;
-		width: 205px;
+		width: 185px;
 	}
 }

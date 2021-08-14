@@ -292,8 +292,7 @@ button:hover {
 
 .restaurant__section h3 {
   font-size: 17px;
-  margin-left: 15px;
-  margin-bottom: 2px;
+  margin: 25px 0 2px 15px;
 }
 
 .restaurant__section .restaurant__titre {
@@ -314,13 +313,15 @@ h3 {
   position: relative;
 }
 
-.restaurant__barre_verte {
+h3::after {
+  content: '';
   width: 40px;
+  height: 3px;
   background-color: #99E2D0;
   margin: 0 15px 0 15px;
   position: absolute;
-  height: 3px;
-  left: -1px;
+  left: -16px;
+  bottom: -8px;
 }
 
 .restaurant__intitule {
@@ -331,7 +332,7 @@ h3 {
 .restaurant__conteneur_plat {
   height: 55px;
   width: 96%;
-  margin: 13px 7px 15px 9px;
+  margin: 18px 7px 15px 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,8 +378,6 @@ h3 {
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
 }
 
 .restaurant__coche_verte i:hover {
@@ -389,7 +388,13 @@ h3 {
 }
 
 .restaurant__bouton {
-  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 45px 0;
 }
 
 .restaurant__bouton button {
@@ -399,14 +404,14 @@ h3 {
   cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
   background: linear-gradient(#ff79da 10%, #9356dc 90%);
-  padding: 18px;
+  padding: 16px;
   margin-top: 17px;
   margin-bottom: 30px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   color: white;
-  width: 205px;
+  width: 185px;
 }
 
 body {
