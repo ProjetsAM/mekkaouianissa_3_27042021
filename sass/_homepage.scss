@@ -122,6 +122,7 @@ button {
 
 #restaurants {
 	background-color: $color-grey;
+	padding: 15px;
 	h2 {
 		font-family: "Shrikand", sans-serif;
 		padding: 35px 0 15px 0;
@@ -129,10 +130,35 @@ button {
 	h3 {
 		font-family: "Shrikand", sans-serif;
 		color: black;
+		margin: 10px 0 0 10px;
+	}
+	p {
+		margin: 5px 0 0 10px;
+		padding-bottom: 10px;
 	}
 	a {
 		color: black;
 		font-family: "roboto", sans-serif;
 		text-decoration: none;
+	}
+	img {
+		width: 100%;
+		height: 150px;
+		border-radius: 20px 20px 0 0;
+		object-fit: cover;
+	}
+	.restaurant {
+		background-color: #fff;
+		border-radius: 20px;
+		margin: 15px 0 15px 0;
+		position: relative;
+
+	}
+	i {
+		position: absolute;
+		bottom: 26px;
+		right: 25px;
+		font-size: 27px;
+
 	}
 }

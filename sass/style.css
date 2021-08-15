@@ -248,6 +248,7 @@ button:hover {
 /* Section Restaurants */
 #restaurants {
   background-color: #F6F6F6;
+  padding: 15px;
 }
 
 #restaurants h2 {
@@ -258,12 +259,40 @@ button:hover {
 #restaurants h3 {
   font-family: "Shrikand", sans-serif;
   color: black;
+  margin: 10px 0 0 10px;
+}
+
+#restaurants p {
+  margin: 5px 0 0 10px;
+  padding-bottom: 10px;
 }
 
 #restaurants a {
   color: black;
   font-family: "roboto", sans-serif;
   text-decoration: none;
+}
+
+#restaurants img {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants .restaurant {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0 15px 0;
+  position: relative;
+}
+
+#restaurants i {
+  position: absolute;
+  bottom: 26px;
+  right: 25px;
+  font-size: 27px;
 }
 
 /* Sections Restaurants  */
@@ -274,13 +303,15 @@ button:hover {
 
 .restaurant__section img {
   width: 100%;
-  height: 100%;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant__section .coeur {
   position: absolute;
   cursor: pointer;
-  top: 38px;
+  top: 34px;
   right: 31px;
   font-size: 23px;
 }
@@ -288,11 +319,6 @@ button:hover {
 .restaurant__section .restaurant__carte {
   background-color: #F6F6F6;
   margin-top: -19px;
-}
-
-.restaurant__section h3 {
-  font-size: 17px;
-  margin: 25px 0 2px 15px;
 }
 
 .restaurant__section .restaurant__titre {
@@ -309,11 +335,13 @@ button:hover {
   font-family: "shrikhand", sans-serif;
 }
 
-h3 {
+.restaurant__section h3 {
   position: relative;
+  font-size: 17px;
+  margin: 25px 0 2px 15px;
 }
 
-h3::after {
+.restaurant__section h3::after {
   content: '';
   width: 40px;
   height: 3px;
