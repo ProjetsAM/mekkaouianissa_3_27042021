@@ -1,3 +1,7 @@
+
+
+
+
 .recherche__onglet {
 	width: 100%;
 	background-color: $color-grey2;
@@ -55,10 +59,14 @@ button {
 	transition-property: transform;
 	transition-duration: 400ms;
 	&:hover {
-		background: linear-gradient ( #ff79da 20%, #9356dc 60%);
+		
 		box-shadow: 6px 5px 10px #acabab;
-		transform: scale(1);
-	}
+		transform: scale(1.20);
+		opacity: 0.8;
+		
+			
+	} 
+	
 }
 
 
@@ -82,10 +90,15 @@ button {
 		display: flex;
 		align-items: center;
 		box-shadow: 3px 3px 10px $color-grey2;
-	}
-	.fonctionnement__boutons:hover {
+	
+	&:hover {
 		background-color: #E8DAEF;
 		cursor: pointer;
+		.fonctionnement__icon {
+			color: #9356dc;
+
+		}
+	}	
 	}
 	.fonctionnement__number {
 		height: 25px;
@@ -104,12 +117,9 @@ button {
 		font-weight: bold;
 		color: white;
 	}
-	.fonctionnement__icon:hover {
-		color: #9356dc;
-		cursor: pointer;
-	}
+	
 	.fonctionnement__icon {
-		padding: 0 22px 0 22px;
+		padding: 0 0 0 22px;
 		width: 52px;
 		display: flex;
 		justify-content: center;
@@ -143,7 +153,7 @@ button {
 	}
 	img {
 		width: 100%;
-		height: 150px;
+		height: 190px;
 		border-radius: 20px 20px 0 0;
 		object-fit: cover;
 	}
@@ -159,6 +169,19 @@ button {
 		bottom: 26px;
 		right: 25px;
 		font-size: 27px;
-
+		opacity: 1;
 	}
+
+	
+	i:hover {
+	  
+	   color: transparent;  
+	   opacity: 1;
+	   background: linear-gradient(#ff79da 10%, #9356dc 90%);
+	   -webkit-background-clip: text;  
+	   transition: opacity .5s ease;
+	}
+	  
+	
+
 }

@@ -162,11 +162,11 @@ button {
 }
 
 button:hover {
-  background: linear-gradient #ff79da 20%, #9356dc 60%;
   -webkit-box-shadow: 6px 5px 10px #acabab;
           box-shadow: 6px 5px 10px #acabab;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
 }
 
 /* Section Fonctionnement */
@@ -203,6 +203,10 @@ button:hover {
   cursor: pointer;
 }
 
+#fonctionnement .fonctionnement__boutons:hover .fonctionnement__icon {
+  color: #9356dc;
+}
+
 #fonctionnement .fonctionnement__number {
   height: 25px;
   width: 25px;
@@ -228,13 +232,8 @@ button:hover {
   color: white;
 }
 
-#fonctionnement .fonctionnement__icon:hover {
-  color: #9356dc;
-  cursor: pointer;
-}
-
 #fonctionnement .fonctionnement__icon {
-  padding: 0 22px 0 22px;
+  padding: 0 0 0 22px;
   width: 52px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,7 +274,7 @@ button:hover {
 
 #restaurants img {
   width: 100%;
-  height: 150px;
+  height: 190px;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -293,6 +292,17 @@ button:hover {
   bottom: 26px;
   right: 25px;
   font-size: 27px;
+  opacity: 1;
+}
+
+#restaurants i:hover {
+  color: transparent;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
+  background: linear-gradient(#ff79da 10%, #9356dc 90%);
+  -webkit-background-clip: text;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
 /* Sections Restaurants  */
@@ -445,5 +455,7 @@ button:hover {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
