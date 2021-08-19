@@ -172,11 +172,12 @@ button {
 	&:hover {
 	  
 	   color: transparent;  
-	   opacity: 0;
+	   
 	   background: linear-gradient(#ff79da 10%, #9356dc 90%);
 	   -webkit-background-clip: text;  
 	   transition: opacity .5s ease;
-	   ;
+	   transition: all 0.7s linear 0s;
+	   
 	   
 	  }
  	}	
