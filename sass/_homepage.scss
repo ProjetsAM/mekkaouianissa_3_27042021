@@ -1,4 +1,11 @@
-
+/*.loading {
+	opacity: 0;	
+}
+.loading {
+	transition-property: opacity;
+	transition-duration: 1.5s;
+	-o-transition-delay: 0.5s;
+}*/
 .recherche__onglet {
 	width: 100%;
 	background-color: $color-grey2;

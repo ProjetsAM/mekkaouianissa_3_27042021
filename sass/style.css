@@ -81,6 +81,14 @@ header img {
   height: 35px;
 }
 
+/*.loading {
+	opacity: 0;	
+}
+.loading {
+	transition-property: opacity;
+	transition-duration: 1.5s;
+	-o-transition-delay: 0.5s;
+}*/
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -426,10 +434,12 @@ button:hover {
   border-radius: 0 15px 15px 0;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  opacity: 0;
 }
 
 .restaurant__coche_verte:hover {
   margin-right: -10px;
+  opacity: 1;
 }
 
 .restaurant__coche_verte:hover i {
