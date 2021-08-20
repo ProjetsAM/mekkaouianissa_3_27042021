@@ -1,11 +1,23 @@
-/*.loading {
-	opacity: 0;	
-}
-.loading {
-	transition-property: opacity;
-	transition-duration: 1.5s;
-	-o-transition-delay: 0.5s;
-}*/
+
+.loading { 
+	background:#F2F2F2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	
+  }
+
+  @keyframes loading {
+	  0% {
+		  opacity: 1;
+	  }
+	  100% {
+		  opacity: 0;
+	  }
+  }
 .recherche__onglet {
 	width: 100%;
 	background-color: $color-grey2;

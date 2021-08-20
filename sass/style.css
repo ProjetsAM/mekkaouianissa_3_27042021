@@ -81,14 +81,34 @@ header img {
   height: 35px;
 }
 
-/*.loading {
-	opacity: 0;	
-}
 .loading {
-	transition-property: opacity;
-	transition-duration: 1.5s;
-	-o-transition-delay: 0.5s;
-}*/
+  background: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -396,6 +416,19 @@ button:hover {
 	}*/
 }
 
+.restaurant__conteneur_plat:hover .restaurant__coche_verte {
+  width: 34px;
+  opacity: 1;
+}
+
+.restaurant__conteneur_plat:hover .restaurant__coche_verte .fa-check-circle {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
 .restaurant__plat {
   width: 100%;
   padding: 0px 10px;
@@ -418,7 +451,6 @@ button:hover {
 .restaurant__coche_verte {
   height: 55px;
   width: 34px;
-  margin: -10px -50px -10px 10px;
   padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,18 +467,6 @@ button:hover {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   opacity: 0;
-}
-
-.restaurant__coche_verte:hover {
-  margin-right: -10px;
-  opacity: 1;
-}
-
-.restaurant__coche_verte:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
 }
 
 .restaurant__bouton {
