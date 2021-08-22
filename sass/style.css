@@ -81,34 +81,26 @@ header img {
   height: 35px;
 }
 
-.loading {
-  background: #F2F2F2;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-}
+/*#loading { 
+	background:#F2F2F2;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	
+  }
 
-@-webkit-keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
+  @keyframes loading {
+	  0% {
+		  opacity: 1;
+	  }
+	  100% {
+		  opacity: 0;
+	  }
+  } */
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -320,18 +312,85 @@ button:hover {
   bottom: 26px;
   right: 25px;
   font-size: 27px;
-  opacity: 1;
+  background-color: transparent;
+  -webkit-transition: color 300ms ease-in;
+  transition: color 300ms ease-in;
 }
 
 #restaurants i:hover {
-  color: transparent;
+  font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff79da), color-stop(90%, #9356dc));
   background: linear-gradient(#ff79da 10%, #9356dc 90%);
   -webkit-background-clip: text;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-  -webkit-transition: all 0.7s linear 0s;
-  transition: all 0.7s linear 0s;
+  color: transparent;
+}
+
+/* Format tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fonctionnement__troisboutons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fonctionnement__troisboutons .fonctionnement__boutons {
+    height: 150px;
+    width: 170px;
+  }
+  #restaurants img {
+    height: 150px;
+    width: 330px;
+  }
+  .restaurants__cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/* Format Desktop */
+@media screen and (min-width: 1024px) {
+  .fonctionnement__troisboutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #restaurants img {
+    height: 240px;
+    width: 400px;
+  }
+  .restaurants__cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 /* Sections Restaurants  */
@@ -408,6 +467,7 @@ button:hover {
           align-items: center;
   background-color: white;
   border-radius: 15px;
+  cursor: pointer;
   /*&:hover {
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -423,10 +483,14 @@ button:hover {
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte .fa-check-circle {
   opacity: 1;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
+  -webkit-transition: -webkit-transform 700ms ease-in-out;
+  transition: -webkit-transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out;
+  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
 }
 
 .restaurant__plat {
@@ -450,7 +514,6 @@ button:hover {
 
 .restaurant__coche_verte {
   height: 55px;
-  width: 34px;
   padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,8 +527,6 @@ button:hover {
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
   opacity: 0;
 }
 
