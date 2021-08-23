@@ -219,18 +219,29 @@ button {
 /* Format tablette */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-	
+#fonctionnement { 	
+
 .fonctionnement__troisboutons { 
 	flex-direction: row;
 	display: flex;
 	justify-content: space-around;
+}
 
 .fonctionnement__boutons {
-	height: 150px;
-	width: 170px;
+	height: 100px;
+	width: 158px;
+	font-size: 14px;
 	
 } 
-  }
+.fonctionnement__icon {
+	font-size: 17px;
+	width: 80px;
+}
+.fonctionnement__number {
+	height: 25px;
+	width: 35px;
+}
+}
 
 #restaurants {
 	img {
