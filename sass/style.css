@@ -40,7 +40,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 100%;
   font-size: 15px;
   font-weight: bold;
 }
@@ -55,6 +55,46 @@
 
 #footer .footer__icon_partenaire {
   padding-right: 10px;
+}
+
+/* Format tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #footer h4 {
+    font-size: 27px;
+  }
+  #footer .footer__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .footer__informations {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* Format Desktop */
+@media screen and (min-width: 1024px) {
+  #footer h4 {
+    font-size: 27px;
+  }
+  #footer .footer__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .footer__informations {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 header {
@@ -79,6 +119,13 @@ header h1 {
 header img {
   padding: 15px 0 0 0;
   height: 35px;
+}
+
+/* Format Desktop */
+@media screen and (min-width: 1024px) {
+  header img {
+    height: 40px;
+  }
 }
 
 /*#loading { 
@@ -143,6 +190,7 @@ header img {
   font-size: 17px;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .recherche__bouton {
@@ -305,6 +353,18 @@ button:hover {
   border-radius: 20px;
   margin: 15px 0 15px 0;
   position: relative;
+}
+
+#restaurants .restaurant__nouveau {
+  background-color: #99E2D0;
+  color: #1E8449;
+  padding: 6px 20px 6px 20px;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 #restaurants i {
@@ -483,10 +543,8 @@ button:hover {
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte .fa-check-circle {
   opacity: 1;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: -webkit-transform 700ms ease-in-out;
   transition: -webkit-transform 700ms ease-in-out;
   transition: transform 700ms ease-in-out;
@@ -563,6 +621,17 @@ button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.8;
+}
+
+/* Format tablette */
+/* Format Desktop */
+@media screen and (min-width: 1024px) {
+  .restaurant__section h2 {
+    font-size: 28px;
+  }
+  .restaurant__bouton button {
+    width: 230px;
+  }
 }
 
 body {

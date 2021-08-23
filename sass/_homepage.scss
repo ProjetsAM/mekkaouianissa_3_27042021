@@ -45,6 +45,7 @@
 	font-size: 17px;
 	text-align: center;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .recherche__bouton {
@@ -180,6 +181,17 @@ button {
 		margin: 15px 0 15px 0;
 		position: relative;
 
+	}
+	.restaurant__nouveau {
+		background-color: $color-tertiary;
+		color: #1E8449; 
+		padding: 6px 20px 6px 20px;
+		border-radius: 2px;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		font-size: 10px;
+		font-weight: bold;
 	}
 
 	

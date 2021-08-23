@@ -31,7 +31,7 @@
   .footer__informations {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     font-size: 15px;
     font-weight: bold;
   }
@@ -44,5 +44,41 @@
   }
   .footer__icon_partenaire {
     padding-right: 10px;
+  }
+}
+
+/* Format tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #footer {
+    h4 {
+      font-size: 27px;
+    }
+   .footer__titre {
+     display: flex;
+     justify-content: center;
+   }
+   .footer__informations {
+     align-items: center;
+   }
+ }
+
+}
+
+/* Format Desktop */
+
+@media screen and (min-width: 1024px)  {
+
+  #footer {
+     h4 {
+       font-size: 27px;
+     }
+    .footer__titre {
+      display: flex;
+      justify-content: center;
+    }
+    .footer__informations {
+      align-items: center;
+    }
   }
 }

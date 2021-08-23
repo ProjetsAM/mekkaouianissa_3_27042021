@@ -22,3 +22,14 @@ header {
     height: 35px;
   }
 }
+
+/* Format Desktop */
+
+@media screen and (min-width: 1024px) { 
+
+  header {
+    img {
+      height: 40px;
+    }
+  }	
+   }

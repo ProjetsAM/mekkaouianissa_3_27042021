@@ -78,8 +78,7 @@
 		
 		 .fa-check-circle {
 			opacity: 1;
-			transform: rotate(-360deg);
-			transition-duration: .5s;
+			transform: rotate(360deg);
 			transition: transform 700ms ease-in-out;
 			
 			
@@ -150,5 +149,29 @@
 		transform: scale(1.20);
 		opacity: 0.8;	
 	}	
+	}
+}
+
+/* Format tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+}
+
+/* Format Desktop */
+
+@media screen and (min-width: 1024px) {
+
+	.restaurant__section {
+		h2 {
+			font-size: 28px;
+		}
+	}
+
+	.restaurant__bouton {
+		button {
+			width: 230px;
+		}
 	}
 }
