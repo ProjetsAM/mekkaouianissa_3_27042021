@@ -633,6 +633,18 @@ button:hover {
 }
 
 /* Format tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurant__conteneur_plat {
+    height: 70px;
+  }
+  .restaurant__conteneur_plat:hover .restaurant__coche_verte {
+    width: 70px;
+  }
+  .restaurant__coche_verte {
+    height: 70px;
+  }
+}
+
 /* Format Desktop */
 @media screen and (min-width: 1024px) {
   .restaurant__section h2 {
@@ -640,6 +652,15 @@ button:hover {
   }
   .restaurant__bouton button {
     width: 230px;
+  }
+  .restaurant__bouton .restaurant__conteneur_plat {
+    height: 70px;
+  }
+  .restaurant__bouton .restaurant__conteneur_plat:hover .restaurant__coche_verte {
+    width: 70px;
+  }
+  .restaurant__bouton .restaurant__coche_verte {
+    height: 70px;
   }
 }
 
