@@ -1,3 +1,5 @@
+
+
 /* Sections Restaurants  */
 
 .restaurant__section {
@@ -23,6 +25,16 @@
 	
 	}
 	
+	.restaurant__carte {
+		transform: translateY(50px);
+		opacity: (1);
+		transition: transform 600ms;
+		animation: .3s ease-out;
+		&:hover {
+			transform:translateY(0px);
+			opacity: (0);
+		}
+	}
 	
 	.restaurant__titre {
 		position: relative;
@@ -61,8 +73,16 @@
 .restaurant__intitule {
 	font-weight: bold;
 	margin-bottom: 5px;
+	
 }
 
+.restaurant__accompagnement {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin: 0;	
+	width: 320px;
+}
 .restaurant__conteneur_plat {
 	height: 55px;
 	width: auto;
@@ -75,23 +95,22 @@
 	&:hover .restaurant__coche_verte {
 		width: 34px;
 		opacity: 1;
+		transition-duration: 0.5s;
 		
-		 .fa-check-circle {
+		.fa-check-circle {
 			opacity: 1;
 			transform: rotate(360deg);
 			transition: transform 700ms ease-in-out;
 			
 			
+			
 		}
 	}
 
-	/*&:hover {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	width: 320px;	
-	}*/
+	
 }
+
+
 
 .restaurant__plat {
 	width: 100%;
@@ -111,7 +130,6 @@
 
 .restaurant__coche_verte {
 	height: 55px;
-	padding: 0 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -153,8 +171,7 @@
 }
 
 /* Format tablette */
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max)  {
 	.restaurant__conteneur_plat {
 		height: 70px;
 	&:hover .restaurant__coche_verte {
@@ -172,8 +189,7 @@
 }
 
 /* Format Desktop */
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $breakpoint-desktop)  {
 
 	.restaurant__section {
 		h2 {

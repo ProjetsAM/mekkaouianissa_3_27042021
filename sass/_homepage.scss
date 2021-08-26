@@ -8,6 +8,10 @@
 	top: 0;
 	left: 0;
 	opacity: 0;
+	svg {
+		width: 90px;
+		display:flex;
+		justify-content: center;
 	
   }
 
@@ -15,10 +19,26 @@
 	  0% {
 		  opacity: 1;
 	  }
+	  50% {
+		  opacity: 0.5;
+	  }
 	  100% {
 		  opacity: 0;
 	  }
-  } */
+  } 
+	
+}
+
+.loading__carreblanc {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}*/
+
 .recherche__onglet {
 	width: 100%;
 	background-color: $color-grey2;
@@ -154,6 +174,7 @@ button {
 	h2 {
 		font-family: "Shrikand", sans-serif;
 		padding: 35px 0 15px 0;
+
 	}
 	h3 {
 		font-family: "Shrikand", sans-serif;
@@ -201,7 +222,7 @@ button {
 		right: 25px;
 		font-size: 27px;
 		background-color: transparent;
-		transition: color 300ms ease-in;
+		transition: color 150ms ease-in;
 
 	&:hover  {
 	  
@@ -217,8 +238,7 @@ button {
 }
 
 /* Format tablette */
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max) {
 #fonctionnement { 	
 
 .fonctionnement__troisboutons { 
@@ -228,7 +248,7 @@ button {
 }
 
 .fonctionnement__boutons {
-	height: 100px;
+	height: auto;
 	width: 158px;
 	font-size: 14px;
 	
@@ -263,8 +283,7 @@ button {
 
 
 /* Format Desktop */
-
-@media screen and (min-width: 1024px) { 
+@media screen and (min-width: $breakpoint-desktop) { 
 
 .fonctionnement__troisboutons {
 	display: flex;

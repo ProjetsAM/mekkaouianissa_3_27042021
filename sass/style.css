@@ -137,6 +137,10 @@ header img {
 	top: 0;
 	left: 0;
 	opacity: 0;
+	svg {
+		width: 90px;
+		display:flex;
+		justify-content: center;
 	
   }
 
@@ -144,10 +148,25 @@ header img {
 	  0% {
 		  opacity: 1;
 	  }
+	  50% {
+		  opacity: 0.5;
+	  }
 	  100% {
 		  opacity: 0;
 	  }
-  } */
+  } 
+	
+}
+
+.loading__carreblanc {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}*/
 .recherche__onglet {
   width: 100%;
   background-color: #eaeaea;
@@ -373,8 +392,8 @@ button:hover {
   right: 25px;
   font-size: 27px;
   background-color: transparent;
-  -webkit-transition: color 300ms ease-in;
-  transition: color 300ms ease-in;
+  -webkit-transition: color 150ms ease-in;
+  transition: color 150ms ease-in;
 }
 
 #restaurants i:hover {
@@ -399,7 +418,7 @@ button:hover {
         justify-content: space-around;
   }
   #fonctionnement .fonctionnement__boutons {
-    height: 100px;
+    height: auto;
     width: 158px;
     font-size: 14px;
   }
@@ -488,6 +507,24 @@ button:hover {
   margin-top: -19px;
 }
 
+.restaurant__section .restaurant__carte {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-animation: .3s ease-out;
+          animation: .3s ease-out;
+}
+
+.restaurant__section .restaurant__carte:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 0;
+}
+
 .restaurant__section .restaurant__titre {
   position: relative;
   top: -36px;
@@ -524,6 +561,14 @@ button:hover {
   margin-bottom: 5px;
 }
 
+.restaurant__accompagnement {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  width: 320px;
+}
+
 .restaurant__conteneur_plat {
   height: 55px;
   width: auto;
@@ -537,17 +582,13 @@ button:hover {
   background-color: white;
   border-radius: 15px;
   cursor: pointer;
-  /*&:hover {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	width: 320px;	
-	}*/
 }
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte {
   width: 34px;
   opacity: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte .fa-check-circle {
@@ -581,7 +622,6 @@ button:hover {
 
 .restaurant__coche_verte {
   height: 55px;
-  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
