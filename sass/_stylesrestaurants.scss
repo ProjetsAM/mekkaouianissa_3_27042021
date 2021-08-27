@@ -2,6 +2,9 @@
 
 /* Sections Restaurants  */
 
+// creer une keyframes ici hors .restaurant__section {}
+// @keyframes apparition {
+//}
 .restaurant__section {
 	position: relative;
 	background-color: $color-grey;
@@ -25,16 +28,16 @@
 	
 	}
 	
-	.restaurant__carte {
+	/*.restaurant__conteneur_plat {
 		transform: translateY(50px);
-		opacity: (1);
+		opacity: (); PAS UN
 		transition: transform 600ms;
-		animation: .3s ease-out;
-		&:hover {
+		KEYFRAMES ??animation: .3s ease-out;
+		 {
 			transform:translateY(0px);
 			opacity: (0);
 		}
-	}
+	}*/
 	
 	.restaurant__titre {
 		position: relative;
@@ -76,12 +79,12 @@
 	
 }
 
-.restaurant__accompagnement {
+.restaurant__accompagnement > div:first-of-type {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	margin: 0;	
-	width: 320px;
+	width: 250px;
 }
 .restaurant__conteneur_plat {
 	height: 55px;
@@ -93,25 +96,20 @@
 	border-radius: 15px;
 	cursor: pointer;
 	&:hover .restaurant__coche_verte {
-		width: 34px;
+		width: 70px;
 		opacity: 1;
-		transition-duration: 0.5s;
+		transition-property: width;
+		transition-duration: 1.5s;
+		
 		
 		.fa-check-circle {
 			opacity: 1;
 			transform: rotate(360deg);
-			transition: transform 700ms ease-in-out;
-			
-			
+			transition: transform 500ms ease-in-out;
 			
 		}
-	}
-
-	
+	}	
 }
-
-
-
 .restaurant__plat {
 	width: 100%;
 	padding: 0px 10px;
@@ -129,6 +127,7 @@
 
 
 .restaurant__coche_verte {
+	width: 0;
 	height: 55px;
 	display: flex;
 	align-items: center;
@@ -137,6 +136,7 @@
 	background-color: $color-tertiary;
 	border-radius: 0 15px 15px 0;
 	opacity: 0;
+	transition-duration: .5s;
 
 }	 
 

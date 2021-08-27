@@ -485,6 +485,16 @@ button:hover {
 .restaurant__section {
   position: relative;
   background-color: #F6F6F6;
+  /*.restaurant__conteneur_plat {
+		transform: translateY(50px);
+		opacity: (); PAS UN
+		transition: transform 600ms;
+		KEYFRAMES ??animation: .3s ease-out;
+		 {
+			transform:translateY(0px);
+			opacity: (0);
+		}
+	}*/
 }
 
 .restaurant__section img {
@@ -505,24 +515,6 @@ button:hover {
 .restaurant__section .restaurant__carte {
   background-color: #F6F6F6;
   margin-top: -19px;
-}
-
-.restaurant__section .restaurant__carte {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
-  -webkit-animation: .3s ease-out;
-          animation: .3s ease-out;
-}
-
-.restaurant__section .restaurant__carte:hover {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 0;
 }
 
 .restaurant__section .restaurant__titre {
@@ -561,12 +553,12 @@ button:hover {
   margin-bottom: 5px;
 }
 
-.restaurant__accompagnement {
+.restaurant__accompagnement > div:first-of-type {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0;
-  width: 320px;
+  width: 250px;
 }
 
 .restaurant__conteneur_plat {
@@ -585,20 +577,22 @@ button:hover {
 }
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte {
-  width: 34px;
+  width: 70px;
   opacity: 1;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 
 .restaurant__conteneur_plat:hover .restaurant__coche_verte .fa-check-circle {
   opacity: 1;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .restaurant__plat {
@@ -621,6 +615,7 @@ button:hover {
 }
 
 .restaurant__coche_verte {
+  width: 0;
   height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,6 +630,8 @@ button:hover {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   opacity: 0;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .restaurant__bouton {
