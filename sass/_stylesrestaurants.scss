@@ -28,16 +28,21 @@
 	
 	}
 	
-	/*.restaurant__conteneur_plat {
-		transform: translateY(50px);
-		opacity: (); PAS UN
-		transition: transform 600ms;
-		KEYFRAMES ??animation: .3s ease-out;
-		 {
-			transform:translateY(0px);
-			opacity: (0);
+	.restaurant__conteneur_plat {
+		animation: apparition 0.8s ease-out;
+		
+	}
+	@keyframes apparition {
+		from {
+			opacity: 0;
+			transform: translateY(-50px);	
 		}
-	}*/
+		to {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+		
 	
 	.restaurant__titre {
 		position: relative;
@@ -79,13 +84,7 @@
 	
 }
 
-.restaurant__accompagnement > div:first-of-type {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	margin: 0;	
-	width: 250px;
-}
+
 .restaurant__conteneur_plat {
 	height: 55px;
 	width: auto;
@@ -109,6 +108,14 @@
 			
 		}
 	}	
+}
+
+.restaurant__accompagnement > div:first-of-type {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin: 0;	
+	width: 250px;
 }
 .restaurant__plat {
 	width: 100%;

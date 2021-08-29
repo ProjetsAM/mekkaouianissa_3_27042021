@@ -485,16 +485,6 @@ button:hover {
 .restaurant__section {
   position: relative;
   background-color: #F6F6F6;
-  /*.restaurant__conteneur_plat {
-		transform: translateY(50px);
-		opacity: (); PAS UN
-		transition: transform 600ms;
-		KEYFRAMES ??animation: .3s ease-out;
-		 {
-			transform:translateY(0px);
-			opacity: (0);
-		}
-	}*/
 }
 
 .restaurant__section img {
@@ -515,6 +505,37 @@ button:hover {
 .restaurant__section .restaurant__carte {
   background-color: #F6F6F6;
   margin-top: -19px;
+}
+
+.restaurant__section .restaurant__conteneur_plat {
+  -webkit-animation: apparition 0.8s ease-out;
+          animation: apparition 0.8s ease-out;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .restaurant__section .restaurant__titre {
@@ -553,14 +574,6 @@ button:hover {
   margin-bottom: 5px;
 }
 
-.restaurant__accompagnement > div:first-of-type {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin: 0;
-  width: 250px;
-}
-
 .restaurant__conteneur_plat {
   height: 55px;
   width: auto;
@@ -593,6 +606,14 @@ button:hover {
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.restaurant__accompagnement > div:first-of-type {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  width: 250px;
 }
 
 .restaurant__plat {
