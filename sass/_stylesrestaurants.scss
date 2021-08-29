@@ -15,12 +15,19 @@
 		height: 225px;
 		object-fit: cover;
 	}
-	.coeur {
+	.coeur i {
 		position: absolute;
 		cursor: pointer;
 		top: 34px;
 		right: 31px;
 		font-size: 23px;
+		&:hover  {
+	  
+			font-weight: bold;  
+			background: linear-gradient(#ff79da 10%, #9356dc 90%);
+			-webkit-background-clip: text;  
+			color: transparent; 
+		}
 	}
 	.restaurant__carte {
 		background-color: $color-grey;

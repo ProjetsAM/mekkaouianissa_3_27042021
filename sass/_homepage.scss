@@ -10,12 +10,13 @@
 	opacity: 0;
 	svg {
 		width: 90px;
+		height: 90px;
 		display:flex;
 		justify-content: center;
 	
   }
-
-  @keyframes loading {
+ }
+ /* @keyframes loading {
 	  0% {
 		  opacity: 1;
 	  }
@@ -27,17 +28,18 @@
 	  }
   } 
 	
-}
+} */
 
 .loading__carreblanc {
 	width: 50px;
 	height: 50px;
 	background-color: #fff;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	
 
-}*/
+}
 
 .recherche__onglet {
 	width: 100%;
@@ -288,7 +290,6 @@ button {
 .fonctionnement__troisboutons {
 	display: flex;
 	flex-direction: row;
-	
 	justify-content: space-around;
 }
 
@@ -297,7 +298,7 @@ button {
 
 	img {
 		height: 240px;
-		width: 400px;
+		width: 460px;
 	}
 }
 .restaurants__cartes {
