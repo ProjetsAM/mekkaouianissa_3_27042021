@@ -1,35 +1,42 @@
-
-#loading { 
-	background:#F2F2F2;
+#loading {
+	background: #F2F2F2;
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	z-index: 20;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom:0;
-	visibility: hidden;
+	bottom: 0;
+	opacity: 0.8;
+	animation: spinner 3s;
+	animation-fill-mode: both;
 	.loading__carreblanc {
-		z-index: 10;
-		visibility: hidden;
 		width: 100px;
 		height: 100px;
 		background-color: #fff;
 		margin: auto;
 		position: absolute;
-		top: 0; left: 0; bottom: 0; right: 0;
-	.loading__svg {
-		width: 100px;
-		height: 100px;
-		display:flex;
-		justify-content: center;
-		;
-	
-  }
-}	
-} 
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		.loading__svg {
+			width: 100px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
 
+@keyframes spinner {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
 
 .recherche__onglet {
 	width: 100%;
@@ -89,14 +96,10 @@ button {
 	transition-property: transform;
 	transition-duration: 400ms;
 	&:hover {
-		
 		box-shadow: 6px 5px 10px #acabab;
 		transform: scale(1.20);
 		opacity: 0.8;
-		
-			
-	} 
-	
+	}
 }
 
 
@@ -120,15 +123,13 @@ button {
 		display: flex;
 		align-items: center;
 		box-shadow: 3px 3px 10px $color-grey2;
-	
-	&:hover {
-		background-color: #E8DAEF;
-		cursor: pointer;
-		.fonctionnement__icon {
-			color: #9356dc;
-
+		&:hover {
+			background-color: #E8DAEF;
+			cursor: pointer;
+			.fonctionnement__icon {
+				color: #9356dc;
+			}
 		}
-	}	
 	}
 	.fonctionnement__number {
 		height: 25px;
@@ -147,7 +148,6 @@ button {
 		font-weight: bold;
 		color: white;
 	}
-	
 	.fonctionnement__icon {
 		padding: 0 0 0 22px;
 		width: 52px;
@@ -166,7 +166,6 @@ button {
 	h2 {
 		font-family: "Shrikand", sans-serif;
 		padding: 35px 0 15px 0;
-
 	}
 	h3 {
 		font-family: "Shrikand", sans-serif;
@@ -193,11 +192,10 @@ button {
 		border-radius: 20px;
 		margin: 15px 0 15px 0;
 		position: relative;
-
 	}
 	.restaurant__nouveau {
 		background-color: $color-tertiary;
-		color: #1E8449; 
+		color: #1E8449;
 		padding: 6px 20px 6px 20px;
 		border-radius: 2px;
 		position: absolute;
@@ -206,8 +204,6 @@ button {
 		font-size: 10px;
 		font-weight: bold;
 	}
-
-	
 	i {
 		position: absolute;
 		bottom: 26px;
@@ -215,87 +211,72 @@ button {
 		font-size: 27px;
 		background-color: transparent;
 		transition: color 150ms ease-in;
-
-	&:hover  {
-	  
-	   font-weight: bold;  
-	   background: linear-gradient(#ff79da 10%, #9356dc 90%);
-	   -webkit-background-clip: text;  
-	   color: transparent; 
-	   
-	  }
- 	}	
+		&:hover {
+			font-weight: bold;
+			background: linear-gradient(#ff79da 10%, #9356dc 90%);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+	}
 }
+
 
 /* Format tablette */
+
 @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max) {
-#fonctionnement { 	
-
-.fonctionnement__troisboutons { 
-	flex-direction: row;
-	display: flex;
-	justify-content: space-around;
-}
-
-.fonctionnement__boutons {
-	height: auto;
-	width: 158px;
-	font-size: 14px;
-	
-} 
-.fonctionnement__icon {
-	font-size: 17px;
-	width: 80px;
-}
-.fonctionnement__number {
-	height: 25px;
-	width: 35px;
-}
-}
-
-#restaurants {
-	img {
-		height: 150px;
-		width: 330px;
+	#fonctionnement {
+		.fonctionnement__troisboutons {
+			flex-direction: row;
+			display: flex;
+			justify-content: space-around;
+		}
+		.fonctionnement__boutons {
+			height: auto;
+			width: 158px;
+			font-size: 14px;
+		}
+		.fonctionnement__icon {
+			font-size: 17px;
+			width: 80px;
+		}
+		.fonctionnement__number {
+			height: 25px;
+			width: 35px;
+		}
 	}
-
-}
-.restaurants__cartes {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
-
-    
-}
+	#restaurants {
+		img {
+			height: 150px;
+			width: 330px;
+		}
+	}
+	.restaurants__cartes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
 
 
 /* Format Desktop */
-@media screen and (min-width: $breakpoint-desktop) { 
 
-.fonctionnement__troisboutons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-
-#restaurants {
-
-	img {
-		height: 240px;
-		width: 460px;
+@media screen and (min-width: $breakpoint-desktop) {
+	.fonctionnement__troisboutons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
-}
-.restaurants__cartes {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-
-	
-	
-}
+	#restaurants {
+		img {
+			height: 240px;
+			width: 460px;
+		}
+	}
+	.restaurants__cartes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
