@@ -25,18 +25,35 @@
 		background-color: $color-grey;
 		margin-top: -19px;
 	}
-	/*.restaurant__conteneur_plat:nth-of-type(2) {
+	.restaurant__conteneur_plat:nth-of-type(2) {
 		animation-delay:0,25s;
 	}
 
 	.restaurant__conteneur_plat:nth-of-type(3) {
-		animation-delay: 0,75;
+		animation-delay: 0,50;
 	}
 	.restaurant__conteneur_plat:nth-of-type(4) {
-		animation-delay: 0,50s;
+		animation-delay: 0,75s;
 	}
+	.restaurant__conteneur_plat:nth-of-type(5) {
+		animation-delay: 1s;
+	}
+	.restaurant__conteneur_plat:nth-of-type(6) {
+		animation-delay: 1,25s;
+	}
+	.restaurant__conteneur_plat:nth-of-type(7) {
+		animation-delay: 1,50s;
+	}
+	.restaurant__conteneur_plat:nth-of-type(8) {
+		animation-delay: 1,75s;
+	}
+	.restaurant__conteneur_plat:nth-of-type(9) {
+		animation-delay: 2s;
+	}
+	
+
 	.restaurant__conteneur_plat {
-		animation: apparition 0.8s ease-out;
+		animation: apparition 2s ease-out;
 	}
 	@keyframes apparition {
 		from {
@@ -48,7 +65,7 @@
 			transform: translateY(0px);
 		}
 	} 
-	*/
+	
 	.restaurant__titre {
 		position: relative;
 		top: -36px;
