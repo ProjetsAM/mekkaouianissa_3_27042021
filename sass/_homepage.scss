@@ -10,7 +10,6 @@
 	opacity: 0;
 	z-index: -1;
 	animation: spinner 3s linear;
-	
 	.loading__carreblanc {
 		width: 100px;
 		height: 100px;
@@ -30,21 +29,23 @@
 		}
 	}
 }
-
 @keyframes spinner {
-	from {
-		opacity: 1;
-		z-index: 1;
-		
+	0% {
+	opacity: 1;
+	z-index: 1;
+	
 	}
-	to {
-		opacity: 0;
-		z-index: -1;
-		
-		
+	80% {
+	opacity: 0.7;
+	z-index: 1;
+	
 	}
-}
-
+	100% {
+	opacity: 0;
+	z-index: -1;
+	}
+	}
+	
 .recherche__onglet {
 	width: 100%;
 	background-color: $color-grey2;
