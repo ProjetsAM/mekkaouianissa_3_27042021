@@ -7,13 +7,14 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 0.8;
-	animation: spinner 3s;
-	animation-fill-mode: both;
+	opacity: 0;
+	z-index: -1;
+	animation: spinner 3s linear;
+	
 	.loading__carreblanc {
 		width: 100px;
 		height: 100px;
-		background-color: #fff;
+		background-color:transparent;
 		margin: auto;
 		position: absolute;
 		top: 0;
@@ -25,6 +26,7 @@
 			height: 100px;
 			display: flex;
 			justify-content: center;
+			
 		}
 	}
 }
@@ -32,10 +34,13 @@
 @keyframes spinner {
 	from {
 		opacity: 1;
+		z-index: 1;
 		
 	}
 	to {
 		opacity: 0;
+		z-index: -1;
+		
 		
 	}
 }

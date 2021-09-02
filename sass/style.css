@@ -137,17 +137,16 @@ header img {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  -webkit-animation: spinner 3s;
-          animation: spinner 3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: spinner 3s linear;
+          animation: spinner 3s linear;
 }
 
 #loading .loading__carreblanc {
   width: 100px;
   height: 100px;
-  background-color: #fff;
+  background-color: transparent;
   margin: auto;
   position: absolute;
   top: 0;
@@ -170,18 +169,22 @@ header img {
 @-webkit-keyframes spinner {
   from {
     opacity: 1;
+    z-index: 1;
   }
   to {
     opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes spinner {
   from {
     opacity: 1;
+    z-index: 1;
   }
   to {
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -534,18 +537,18 @@ button:hover {
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(2) {
-  -webkit-animation-delay: 0,25s;
-          animation-delay: 0,25s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(3) {
-  -webkit-animation-delay: 0,50;
-          animation-delay: 0,50;
+  -webkit-animation-delay: 0.50;
+          animation-delay: 0.50;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(4) {
-  -webkit-animation-delay: 0,75s;
-          animation-delay: 0,75s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(5) {
@@ -554,18 +557,18 @@ button:hover {
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(6) {
-  -webkit-animation-delay: 1,25s;
-          animation-delay: 1,25s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(7) {
-  -webkit-animation-delay: 1,50s;
-          animation-delay: 1,50s;
+  -webkit-animation-delay: 1.50s;
+          animation-delay: 1.50s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(8) {
-  -webkit-animation-delay: 1,75s;
-          animation-delay: 1,75s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(9) {
@@ -574,15 +577,15 @@ button:hover {
 }
 
 .restaurant__section .restaurant__conteneur_plat {
-  -webkit-animation: apparition 2s ease-out;
-          animation: apparition 2s ease-out;
+  -webkit-animation: apparition 2.25s ease-out;
+          animation: apparition 2.25s ease-out;
 }
 
 @-webkit-keyframes apparition {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
   }
   to {
     opacity: 1;
@@ -594,8 +597,8 @@ button:hover {
 @keyframes apparition {
   from {
     opacity: 0;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
   }
   to {
     opacity: 1;
@@ -668,10 +671,10 @@ button:hover {
   opacity: 1;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in;
+  transition: -webkit-transform 500ms ease-in;
+  transition: transform 500ms ease-in;
+  transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
 }
 
 .restaurant__accompagnement > div:first-of-type {
