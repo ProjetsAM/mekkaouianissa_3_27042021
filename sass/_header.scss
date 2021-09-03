@@ -5,26 +5,31 @@ header {
 	margin: 0px auto;
 	.retour {
 		position: absolute;
-		left: 37px;
+		left: 28px;
 		font-size: 23px;
-		bottom: 9px;
+		bottom: 8px;
 		color: black;
 	}
 	h1 {
 		text-align: center;
+		font-size: 36px;
+		font-family: shrikhand;
+		color:black;
+		font-weight: 500;
 	}
-	img {
+	a {
 		padding: 15px 0 0 0;
-		height: 35px;
+		
+		text-decoration: none;
+		cursor: pointer;
 	}
 }
-
 
 /* Format Desktop */
 
 @media screen and (min-width: 1024px) {
 	header {
-		img {
+		h1 {
 			height: 40px;
 		}
 	}

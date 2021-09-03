@@ -106,24 +106,29 @@ header {
 
 header .retour {
   position: absolute;
-  left: 37px;
+  left: 28px;
   font-size: 23px;
-  bottom: 9px;
+  bottom: 8px;
   color: black;
 }
 
 header h1 {
   text-align: center;
+  font-size: 36px;
+  font-family: shrikhand;
+  color: black;
+  font-weight: 500;
 }
 
-header img {
+header a {
   padding: 15px 0 0 0;
-  height: 35px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Format Desktop */
 @media screen and (min-width: 1024px) {
-  header img {
+  header h1 {
     height: 40px;
   }
 }
@@ -685,12 +690,16 @@ button:hover {
   transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
 }
 
-.restaurant__accompagnement > div:first-of-type {
+.restaurant__plat {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.restaurant__plat .restaurant__accompagnement > div:first-of-type {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 0;
-  max-width: 280px;
 }
 
 .restaurant__plat {

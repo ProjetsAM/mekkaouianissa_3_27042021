@@ -121,12 +121,15 @@
 	}
 }
 
-.restaurant__accompagnement>div:first-of-type {
+.restaurant__plat {
+	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
-	margin: 0;
-	max-width: 280px;
+	.restaurant__accompagnement>div:first-of-type {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
 }
 
 .restaurant__plat {
