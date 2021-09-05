@@ -14,11 +14,14 @@
 		top: 34px;
 		right: 31px;
 		font-size: 23px;
+		background-color:transparent;
+		transition: color 300ms ease-in;
 		&:hover {
 			font-weight: bold;
 			background: linear-gradient(#ff79da 10%, #9356dc 90%);
 			-webkit-background-clip: text;
 			color: transparent;
+			
 		}
 	}
 	.restaurant__carte {
@@ -29,7 +32,7 @@
 		animation-delay:0.25s;
 	}
 	.restaurant__conteneur_plat:nth-of-type(3) {
-		animation-delay: 0.50;
+		animation-delay: 0.50s;
 	}
 	.restaurant__conteneur_plat:nth-of-type(4) {
 		animation-delay: 0.75s;

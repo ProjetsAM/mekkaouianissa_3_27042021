@@ -219,14 +219,18 @@ button {
 		right: 25px;
 		font-size: 27px;
 		background-color: transparent;
-		transition: color 150ms ease-in;
+		transition: color 300ms ease-in;
 		&:hover {
 			font-weight: bold;
 			background: linear-gradient(#ff79da 10%, #9356dc 90%);
 			-webkit-background-clip: text;
 			color: transparent;
+			
+			
+			
 		}
 	}
+
 }
 
 

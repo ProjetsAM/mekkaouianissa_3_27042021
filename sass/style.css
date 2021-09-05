@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 /* Couleurs */
 /* Marges */
 /* Media Queries */
@@ -108,7 +107,7 @@ header .retour {
   position: absolute;
   left: 28px;
   font-size: 23px;
-  bottom: 8px;
+  bottom: 5px;
   color: black;
 }
 
@@ -426,8 +425,8 @@ button:hover {
   right: 25px;
   font-size: 27px;
   background-color: transparent;
-  -webkit-transition: color 150ms ease-in;
-  transition: color 150ms ease-in;
+  -webkit-transition: color 300ms ease-in;
+  transition: color 300ms ease-in;
 }
 
 #restaurants i:hover {
@@ -534,6 +533,9 @@ button:hover {
   top: 34px;
   right: 31px;
   font-size: 23px;
+  background-color: transparent;
+  -webkit-transition: color 300ms ease-in;
+  transition: color 300ms ease-in;
 }
 
 .restaurant__section .coeur i:hover {
@@ -555,8 +557,8 @@ button:hover {
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(3) {
-  -webkit-animation-delay: 0.50;
-          animation-delay: 0.50;
+  -webkit-animation-delay: 0.50s;
+          animation-delay: 0.50s;
 }
 
 .restaurant__section .restaurant__conteneur_plat:nth-of-type(4) {
