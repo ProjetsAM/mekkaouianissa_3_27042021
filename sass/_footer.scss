@@ -41,7 +41,7 @@
 
 /* Format tablette */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-tablet-max) {
 	#footer {
 		h4 {
 			font-size: 27px;
@@ -59,7 +59,7 @@
 
 /* Format Desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $breakpoint-desktop) {
 	#footer {
 		h4 {
 			font-size: 27px;

@@ -14,14 +14,13 @@
 		top: 34px;
 		right: 31px;
 		font-size: 23px;
-		background-color:transparent;
+		background-color: transparent;
 		transition: color 300ms ease-in;
 		&:hover {
 			font-weight: bold;
 			background: linear-gradient(#ff79da 10%, #9356dc 90%);
 			-webkit-background-clip: text;
 			color: transparent;
-			
 		}
 	}
 	.restaurant__carte {
@@ -29,7 +28,7 @@
 		margin-top: -19px;
 	}
 	.restaurant__conteneur_plat:nth-of-type(2) {
-		animation-delay:0.25s;
+		animation-delay: 0.25s;
 	}
 	.restaurant__conteneur_plat:nth-of-type(3) {
 		animation-delay: 0.50s;
@@ -52,8 +51,6 @@
 	.restaurant__conteneur_plat:nth-of-type(9) {
 		animation-delay: 2s;
 	}
-	
-
 	.restaurant__conteneur_plat {
 		animation: apparition 2.25s ease-out;
 	}
@@ -66,8 +63,7 @@
 			opacity: 1;
 			transform: translateY(0px);
 		}
-	} 
-	
+	}
 	.restaurant__titre {
 		position: relative;
 		top: -36px;
